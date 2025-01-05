@@ -24,7 +24,7 @@ Shader "aScattering 2.0" {
 		vBetaMie("vBetaMie",Vector) = (0,0,0)
 		BetaMieTheta("BetaMieTheta",Vector) = (0,0,0)
 		g_vEyePt("g_vEyePt",Vector) = (0,0,0)
-		g_vSunColor("g_vSunColor",Vector) = (0,0,0)
+		g_vSunColor("g_vSunColor",Vector) = (1,1,0.8)
 		wind_direction("winddirection",Vector) = (0,0,0,0)
 	}
 	
@@ -111,7 +111,7 @@ return OUT;
 }
 
 float4 frag (vertex_output IN): COLOR {
-	float4 color:COLOR;
+	float4 color;
 	float4 noise1=tex2D(noisetex,IN.uvcoords1.xy/IN.orgposz);
 	float4 noise2=tex2D(noisetex,IN.uvcoords2.xy/IN.orgposz);
 	float4 stars=tex2D(starTexture,IN.starUV.xy);

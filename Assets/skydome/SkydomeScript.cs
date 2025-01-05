@@ -49,8 +49,12 @@ public class SkydomeScript : MonoBehaviour {
 
 	void Start () 
 	{
-	    sunLight = new GameObject("Sun");
-	    sunLight.AddComponent<Light>();
+        GameObject sunLight = new GameObject("Sun");
+        sunLight.transform.rotation = Quaternion.Euler(15, 0, 0);
+        Light lightComponent = sunLight.AddComponent<Light>();
+        lightComponent.type = LightType.Directional;
+        lightComponent.color = Color.yellow;
+        lightComponent.intensity = 1.0f;
 	}
     
     void Update()
@@ -63,20 +67,20 @@ public class SkydomeScript : MonoBehaviour {
         Vector3 sunLightD = sunLight.transform.TransformDirection(-Vector3.forward);
         Vector3 pos = new Vector3(0f,0.02f,0f);
 
-        this.GetComponent<Renderer>().material.SetVector("vBetaRayleigh", vBetaRayleigh);
-        this.GetComponent<Renderer>().material.SetVector("BetaRayTheta", m_vBetaRayTheta);
-        this.GetComponent<Renderer>().material.SetVector("vBetaMie", vBetaMie);                     
-        this.GetComponent<Renderer>().material.SetVector("BetaMieTheta", m_vBetaMieTheta);
-        this.GetComponent<Renderer>().material.SetVector("g_vEyePt",  pos);
-        this.GetComponent<Renderer>().material.SetVector("LightDir", sunLightD);
-        this.GetComponent<Renderer>().material.SetVector("g_vSunColor", m_vColor);
-        this.GetComponent<Renderer>().material.SetFloat("DirectionalityFactor", m_fDirectionalityFactor);
-        this.GetComponent<Renderer>().material.SetFloat("SunColorIntensity", m_fSunColorIntensity);
-        this.GetComponent<Renderer>().material.SetFloat("tint", cloudTint);
-        this.GetComponent<Renderer>().material.SetFloat("cloudSpeed1", cloudSpeed1);
-        this.GetComponent<Renderer>().material.SetFloat("cloudSpeed2", cloudSpeed2);
-        this.GetComponent<Renderer>().material.SetFloat("plane_height1", cloudHeight1);
-        this.GetComponent<Renderer>().material.SetFloat("plane_height2", cloudHeight2);
+        this.GetComponent<Renderer>().sharedMaterial.SetVector("vBetaRayleigh", vBetaRayleigh);
+        this.GetComponent<Renderer>().sharedMaterial.SetVector("BetaRayTheta", m_vBetaRayTheta);
+        this.GetComponent<Renderer>().sharedMaterial.SetVector("vBetaMie", vBetaMie);                     
+        this.GetComponent<Renderer>().sharedMaterial.SetVector("BetaMieTheta", m_vBetaMieTheta);
+        this.GetComponent<Renderer>().sharedMaterial.SetVector("g_vEyePt",  pos);
+        this.GetComponent<Renderer>().sharedMaterial.SetVector("LightDir", sunLightD);
+        this.GetComponent<Renderer>().sharedMaterial.SetVector("g_vSunColor", m_vColor);
+        this.GetComponent<Renderer>().sharedMaterial.SetFloat("DirectionalityFactor", m_fDirectionalityFactor);
+        this.GetComponent<Renderer>().sharedMaterial.SetFloat("SunColorIntensity", m_fSunColorIntensity);
+        this.GetComponent<Renderer>().sharedMaterial.SetFloat("tint", cloudTint);
+        this.GetComponent<Renderer>().sharedMaterial.SetFloat("cloudSpeed1", cloudSpeed1);
+        this.GetComponent<Renderer>().sharedMaterial.SetFloat("cloudSpeed2", cloudSpeed2);
+        this.GetComponent<Renderer>().sharedMaterial.SetFloat("plane_height1", cloudHeight1);
+        this.GetComponent<Renderer>().sharedMaterial.SetFloat("plane_height2", cloudHeight2);
         
         //update sun
         LATITUDE = Mathf.Clamp(LATITUDE, -90.0f, 90.0f);
