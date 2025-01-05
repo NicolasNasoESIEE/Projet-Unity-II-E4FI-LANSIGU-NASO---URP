@@ -52,7 +52,7 @@ Material:
     m_Floats:
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
-    - _DephValue: 10
+    - _DephValue: 11.31
     - _FoamAmount: 2
     - _FoamCuttOff: 1
     - _QueueControl: 0
