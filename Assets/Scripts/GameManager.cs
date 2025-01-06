@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour
     
         if (Input.GetKeyDown(KeyCode.K))
         {
-            ActivateDeactivate(bush,dirtyWater);
             ActivateDeactivate(EauSuccess, Eau);
         }
 

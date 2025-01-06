@@ -5618,8 +5618,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bravo ! Vous avez r\xE9solu la premi\xE8re \xE9nigme ! Tu as plac\xE9
-    la vegetation dans l'eau afin de filter l'eau."
+  m_text: "Bravo ! Vous avez r\xE9solu la premi\xE8re \xE9nigme ! Gr\xE2ce \xE0 la
+    v\xE9g\xE9tation, l'eau est filtr\xE9e, ce qui emp\xEAche un empoisonement total,
+    certaines plantes font partie des solutions pour contrecarrer la pollution!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5646,8 +5647,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 11.14
-  m_fontSizeBase: 11.14
+  m_fontSize: 8.07
+  m_fontSizeBase: 8.07
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8781,8 +8782,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainObject: {fileID: 919132149420356800}
   teleport: {fileID: 66966296}
-  bush: {fileID: 1222879986}
-  dirtyWater: {fileID: 166978875}
   Menu: {fileID: 1243915990}
   Eau: {fileID: 1949980175}
   EauSuccess: {fileID: 1636957038}
@@ -8790,6 +8789,7 @@ MonoBehaviour:
   FeuSuccess: {fileID: 0}
   Autre: {fileID: 0}
   AutreSuccess: {fileID: 0}
+  PanelsList: []
 --- !u!114 &1692535000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15861,7 +15861,7 @@ Transform:
   m_GameObject: {fileID: 919132149420356800}
   serializedVersion: 2
   m_LocalRotation: {x: -0.37577567, y: 0.34959874, z: 0.15565138, w: 0.844006}
-  m_LocalPosition: {x: 0.40898886, y: 1.418, z: 0.5919992}
+  m_LocalPosition: {x: 0.379, y: 1.418, z: 0.655}
   m_LocalScale: {x: 29.455439, y: 2.9455423, z: 44.183144}
   m_ConstrainProportionsScale: 1
   m_Children:

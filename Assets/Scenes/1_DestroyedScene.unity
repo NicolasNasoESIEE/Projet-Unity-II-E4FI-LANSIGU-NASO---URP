@@ -1363,11 +1363,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ebf4444632291a042aa0df49bae29fea, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1476,12 +1476,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainObject: {fileID: 0}
   teleport: {fileID: 404220930}
-  bush: {fileID: 0}
-  dirtyWater: {fileID: 0}
-  object1: {fileID: 0}
-  object2: {fileID: 0}
-  object3: {fileID: 0}
-  object4: {fileID: 0}
+  Menu: {fileID: 0}
+  Eau: {fileID: 0}
+  EauSuccess: {fileID: 0}
+  Feu: {fileID: 0}
+  FeuSuccess: {fileID: 0}
+  Autre: {fileID: 0}
+  AutreSuccess: {fileID: 0}
+  PanelsList: []
 --- !u!1001 &1815671885
 PrefabInstance:
   m_ObjectHideFlags: 0

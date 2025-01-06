@@ -6,12 +6,14 @@ public class PopUpData : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject Uitoactivate;
+    public GameObject Uidesactivate;
 
     // Update is called once per frame
     void Update()
     {
         if(GlobalState.valide==1){
             Uitoactivate.SetActive(true);
+            Uidesactivate.SetActive(false);
         }
     }
 }
