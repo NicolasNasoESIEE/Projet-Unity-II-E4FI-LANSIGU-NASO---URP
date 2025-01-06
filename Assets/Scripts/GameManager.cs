@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -11,37 +13,39 @@ public class GameManager : MonoBehaviour
     public GameObject dirtyWater;
 
     [Header("GameObjects à activer/désactiver")]
-    public GameObject object1; // Activé avec &
-    public GameObject object2; // Activé avec é
-    public GameObject object3; // Activé avec "
-    public GameObject object4; // Désactivé avec &
-    
+    public GameObject Menu;
+    public GameObject Eau; // Activé avec &
+    public GameObject EauSuccess;
+    public GameObject Feu; // Activé avec é
+    public GameObject FeuSuccess;
+    public GameObject Autre; // Activé avec "
+    public GameObject AutreSuccess;
+
+    public GameObject[] PanelsList;
+
+    private void Start()
+    {
+        PanelsList = new GameObject[] { Menu, Eau, EauSuccess, Feu, FeuSuccess, Autre, AutreSuccess };
+    }
 
     void Update()
     {
     
-         // Toggle principal avec T
         if (Input.GetKeyDown(KeyCode.K))
         {
             ActivateDeactivate(bush,dirtyWater);
+            ActivateDeactivate(EauSuccess, Eau);
         }
 
-        // Toggle principal avec T
         if (Input.GetKeyDown(KeyCode.T))
         {
             ToggleMainObject();
         }
 
-        // Toggle principal avec T
         if (Input.GetKeyDown(KeyCode.R))
         {
             ToggleTeleport();
         }
-
-         if (Input.GetKeyDown(KeyCode.K)) // Touche &
-            {
-                ActivateDeactivate(bush, object4);
-            }
 
         // Vérifie si le GameObject principal est actif
         if (mainObject != null && mainObject.activeSelf)
@@ -49,15 +53,15 @@ public class GameManager : MonoBehaviour
             // Activation/Désactivation des autres objets
             if (Input.GetKeyDown(KeyCode.Alpha1)) // Touche &
             {
-                ActivateDeactivate(object1, object4);
+                ActivateDeactivate(Eau, Menu);
             }
             else if (Input.GetKeyDown(KeyCode.Alpha2)) // Touche é
             {
-                ActivateDeactivate(object2, object4);
+                ActivateDeactivate(Feu, Menu);
             }
             else if (Input.GetKeyDown(KeyCode.Alpha3)) // Touche "
             {
-                ActivateDeactivate(object3, object4);
+                ActivateDeactivate(Autre, Menu);
             }
         }
     }
@@ -75,10 +79,15 @@ public class GameManager : MonoBehaviour
 
     void ToggleMainObject()
     {
+
+        foreach (GameObject panel in PanelsList)
+        {
+            ActivateDeactivate(Menu, panel);
+        }
+
         if (mainObject != null)
         {
             mainObject.SetActive(!mainObject.activeSelf);
-            ActivateDeactivate(object4, object1);
         }
         else
         {
