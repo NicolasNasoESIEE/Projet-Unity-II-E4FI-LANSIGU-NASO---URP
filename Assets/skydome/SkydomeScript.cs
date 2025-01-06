@@ -50,11 +50,10 @@ public class SkydomeScript : MonoBehaviour {
 	void Start () 
 	{
         GameObject sunLight = new GameObject("Sun");
-        sunLight.transform.rotation = Quaternion.Euler(15, 0, 0);
+        sunLight.transform.rotation = Quaternion.Euler(100, 0, 0);
         Light lightComponent = sunLight.AddComponent<Light>();
         lightComponent.type = LightType.Directional;
-        lightComponent.color = Color.yellow;
-        lightComponent.intensity = 1.0f;
+        lightComponent.intensity = 0.5f;
 	}
     
     void Update()
