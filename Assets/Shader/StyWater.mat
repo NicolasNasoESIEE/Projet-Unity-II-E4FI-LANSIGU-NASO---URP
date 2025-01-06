@@ -58,7 +58,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RefractionScale: 10
-    - _RefractionSpeed: 2
+    - _RefractionSpeed: 0.1
     - _RefractionStrengh: 2
     - _foamscale: 100
     - _foarmspeed: 1
