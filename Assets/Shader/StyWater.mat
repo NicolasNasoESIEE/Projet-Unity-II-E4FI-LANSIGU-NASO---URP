@@ -61,7 +61,7 @@ Material:
     - _RefractionSpeed: 2
     - _RefractionStrengh: 2
     - _foamscale: 100
-    - _foarmspeed: 0
+    - _foarmspeed: 1
     m_Colors:
     - _DeepWater: {r: 0.06550375, g: 0.1205804, b: 0.6037736, a: 0.77254903}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
