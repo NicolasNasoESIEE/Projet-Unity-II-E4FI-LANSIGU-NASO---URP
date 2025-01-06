@@ -8,7 +8,7 @@ public class SceneChanger : MonoBehaviour
     // Méthode pour changer de scène
     public void ChangeScene()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(2);
     }
 
 

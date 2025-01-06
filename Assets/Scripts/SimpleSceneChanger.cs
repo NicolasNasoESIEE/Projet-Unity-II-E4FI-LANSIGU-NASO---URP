@@ -17,6 +17,6 @@ public class SimpleSceneChanger : MonoBehaviour
 
     void ChangeToScene2()
     {
-        SceneManager.LoadScene(2); 
+        SceneManager.LoadScene(0); 
     }
 }

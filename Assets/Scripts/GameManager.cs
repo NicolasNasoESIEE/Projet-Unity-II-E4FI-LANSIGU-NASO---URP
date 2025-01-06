@@ -9,8 +9,7 @@ public class GameManager : MonoBehaviour
     [Header("GameObject principal")]
     public GameObject mainObject;
     public GameObject teleport;
-    public GameObject bush;
-    public GameObject dirtyWater;
+    
 
     [Header("GameObjects à activer/désactiver")]
     public GameObject Menu;
