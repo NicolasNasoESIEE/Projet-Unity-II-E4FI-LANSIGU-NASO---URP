@@ -10,7 +10,7 @@ Shader "aScattering 2.0" {
 	Properties {
 		DirectionalityFactor("DirectionalityFactor",float) = 0
 		SunColorIntensity("SunColorIntensity",float) = 0
-		tint("tint",float) = 1
+		tint("tint",float) = 0.2
 		fade("Cloud fade height",float) = 0
 		cloudSpeed1("cloudSpeed1",float)=1
 		cloudSpeed2("cloudSpeed2",float)=1
@@ -19,12 +19,12 @@ Shader "aScattering 2.0" {
 		noisetex ("noise texture", 2D) = "white" {}
 		starTexture ("starTexture", 2D) = "white" {}
 		LightDir("LightDir",Vector) = (0,0,0)
-		vBetaRayleigh("vBetaRayleigh",Vector) = (0,0,0)
-		BetaRayTheta("BetaRayTheta",Vector) = (0,0,0)
+		vBetaRayleigh("vBetaRayleigh",Vector) = (0.0025, 0.005, 0.015)
+		BetaRayTheta("BetaRayTheta",Vector) = (0.0025, 0.005, 0.015)
 		vBetaMie("vBetaMie",Vector) = (0,0,0)
 		BetaMieTheta("BetaMieTheta",Vector) = (0,0,0)
 		g_vEyePt("g_vEyePt",Vector) = (0,0,0)
-		g_vSunColor("g_vSunColor",Vector) = (1,1,0.8)
+		g_vSunColor("g_vSunColor",Vector) = (0.6, 0.75, 1.0)
 		wind_direction("winddirection",Vector) = (0,0,0,0)
 	}
 	

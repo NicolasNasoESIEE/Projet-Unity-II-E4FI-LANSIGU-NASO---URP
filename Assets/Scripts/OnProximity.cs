@@ -19,7 +19,7 @@ public class ActivateObjectOnProximityAndKeyPress : MonoBehaviour
         isPlayerInRange = distance <= activationDistance;
 
         // Si le joueur est proche et appuie sur K
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.K) && GlobalState.valide==2)
+        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E) && GlobalState.valide==2)
         {
             // Activer l'objet
             objectToActivate.SetActive(true);

@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
     
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             ActivateDeactivate(EauSuccess, Eau);
         }

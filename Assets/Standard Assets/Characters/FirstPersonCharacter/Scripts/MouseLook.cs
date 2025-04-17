@@ -7,8 +7,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [Serializable]
     public class MouseLook
     {
-        public float XSensitivity = 2f;
-        public float YSensitivity = 2f;
+        public float XSensitivity = 1f;
+        public float YSensitivity = 1f;
         public bool clampVerticalRotation = true;
         public float MinimumX = -90F;
         public float MaximumX = 90F;
@@ -24,6 +24,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             m_CharacterTargetRot = character.localRotation;
             m_CameraTargetRot = camera.localRotation;
+
+            // Lock and hide the cursor
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
         }
 
 
