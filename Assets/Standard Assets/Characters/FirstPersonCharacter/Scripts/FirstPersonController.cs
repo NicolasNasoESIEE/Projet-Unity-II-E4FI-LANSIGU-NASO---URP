@@ -57,12 +57,23 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
-
+        public GameObject[] uiPanels;
         // Update is called once per frame
         private void Update()
         {
+            if (!IsAnyPanelActive()) // la souris bouge uniquement si aucun panneau UI n’est actif
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+
             RotateView();
-            // the jump state needs to read here to make sure it is not missed
+
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
@@ -83,6 +94,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
 
+        bool IsAnyPanelActive()
+        {
+            foreach (GameObject panel in uiPanels)
+            {
+                if (panel.activeSelf)
+                    return true;
+            }
+            return false;
+        }
 
         private void PlayLandingSound()
         {
