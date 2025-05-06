@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree5
       objectReference: {fileID: 0}
+    - target: {fileID: 3677871804177914180, guid: 09bf44b9b234d644983896c80e660d98, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5427498858706816656, guid: 09bf44b9b234d644983896c80e660d98, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5427498858706816656, guid: 09bf44b9b234d644983896c80e660d98, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -79,8 +87,8 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480877422110012466}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
+  m_LocalReferencePoint: {x: -0.4091767, y: 5.529044, z: 0.44644547}
+  m_Size: 12.083649
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
@@ -95,7 +103,7 @@ LODGroup:
     renderers:
     - renderer: {fileID: 4701577497347393523}
     - renderer: {fileID: 4136396060293681191}
-  - screenRelativeHeight: 0.040247492
+  - screenRelativeHeight: 0.043544333
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 4701577497347393523}
