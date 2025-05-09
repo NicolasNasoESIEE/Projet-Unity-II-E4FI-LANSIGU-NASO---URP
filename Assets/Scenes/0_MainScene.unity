@@ -4396,15 +4396,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3735837918275529557, guid: 365a1e10765177b44a5a089b2954b2d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 633.7
+      value: 759.25
       objectReference: {fileID: 0}
     - target: {fileID: 3735837918275529557, guid: 365a1e10765177b44a5a089b2954b2d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.9
+      value: 20.42
       objectReference: {fileID: 0}
     - target: {fileID: 3735837918275529557, guid: 365a1e10765177b44a5a089b2954b2d4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 273.2
+      value: 288.02
       objectReference: {fileID: 0}
     - target: {fileID: 3735837918275529557, guid: 365a1e10765177b44a5a089b2954b2d4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4991,6 +4991,7 @@ GameObject:
   - component: {fileID: 840008791}
   - component: {fileID: 840008790}
   - component: {fileID: 840008789}
+  - component: {fileID: 840008792}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -5047,6 +5048,32 @@ Transform:
   - {fileID: 1764154632}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 115.464, z: 0}
+--- !u!143 &840008792
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840008788}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &850473444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5182022784821119874, guid: 87af029278b2c9343a9dc3c9392a6a69, type: 3}
@@ -7614,7 +7641,7 @@ MonoBehaviour:
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
-  m_GravityApplicationMode: 0
+  m_GravityApplicationMode: 1
   m_ForwardSource: {fileID: 540747867}
   m_LeftHandMoveAction:
     m_UseReference: 1
