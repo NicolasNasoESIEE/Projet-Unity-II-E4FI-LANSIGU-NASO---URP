@@ -277,10 +277,10 @@ PrefabInstance:
       addedObject: {fileID: -645203093832732270}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4e804774aa487b247bf290cad52864fd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 20764500009717518}
+      addedObject: {fileID: 4488353447991077940}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4e804774aa487b247bf290cad52864fd, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4488353447991077940}
+      addedObject: {fileID: 6950972331788969522}
   m_SourcePrefab: {fileID: 100100000, guid: 4e804774aa487b247bf290cad52864fd, type: 3}
 --- !u!4 &528722615565977272 stripped
 Transform:
@@ -311,21 +311,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.75, y: 1.75, z: 1.75}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &20764500009717518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873054866433825794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 204dee3aec897c144a91b66a993aeb46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToSpawn: {fileID: 4868994572008914546, guid: c3de7ca5d2604ef4990afd2bff059208, type: 3}
 --- !u!205 &4488353447991077940
 LODGroup:
   m_ObjectHideFlags: 0
@@ -353,6 +340,20 @@ LODGroup:
     renderers:
     - renderer: {fileID: 6124478322743093683}
   m_Enabled: 1
+--- !u!114 &6950972331788969522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873054866433825794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b8e3b36da196944bbb15f3fe270bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  completeCagePrefab: {fileID: 4868994572008914546, guid: c3de7ca5d2604ef4990afd2bff059208, type: 3}
+  cageSpawnPoint: {fileID: 0}
 --- !u!1001 &4845610640167679287
 PrefabInstance:
   m_ObjectHideFlags: 0
