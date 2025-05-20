@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - MachinePiece
+  - Reed
   layers:
   - Default
   - TransparentFX
