@@ -5069,8 +5069,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.08, y: 2.08, z: 2.08}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1723219384}
   - {fileID: 436184656}
@@ -11988,7 +11988,7 @@ Transform:
   m_GameObject: {fileID: 1867589176}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2.922}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12007,7 +12007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 436184657}
-  m_TurnSpeed: 60
+  m_TurnSpeed: 120
   m_LeftHandTurnAction:
     m_UseReference: 1
     m_Action:
@@ -13592,7 +13592,7 @@ Transform:
   m_GameObject: {fileID: 2054078257}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13612,7 +13612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_System: {fileID: 436184657}
   m_MoveSpeed: 5
-  m_EnableStrafe: 1
+  m_EnableStrafe: 0
   m_EnableFly: 0
   m_UseGravity: 1
   m_GravityApplicationMode: 1
@@ -14136,6 +14136,7 @@ SceneRoots:
   - {fileID: 1181728459}
   - {fileID: 1965927923}
   - {fileID: 696560086}
+  - {fileID: 172237372}
   - {fileID: 140391450}
   - {fileID: 402854714}
   - {fileID: 1922539893}
@@ -14152,6 +14153,5 @@ SceneRoots:
   - {fileID: 2058264999}
   - {fileID: 873189265}
   - {fileID: 1420269602}
-  - {fileID: 172237372}
   - {fileID: 139291667}
   - {fileID: 47016320}
