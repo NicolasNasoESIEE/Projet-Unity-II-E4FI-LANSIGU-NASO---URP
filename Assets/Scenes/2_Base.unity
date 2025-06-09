@@ -312,6 +312,7 @@ GameObject:
   - component: {fileID: 47016319}
   - component: {fileID: 47016318}
   - component: {fileID: 47016321}
+  - component: {fileID: 47016322}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -407,6 +408,19 @@ MonoBehaviour:
   toCanvasAButton: {fileID: 1686002688}
   audioSource: {fileID: 1378006955}
   audioClip: {fileID: 8300000, guid: 8d4fc5a86381c334fb6f41e39141d247, type: 3}
+--- !u!114 &47016322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47016317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba8f8cd04dd864743a266429fcb39361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specialAudio: {fileID: 8300000, guid: e1912982e45e1a24b8852706667032b9, type: 3}
 --- !u!1 &94675586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4265405002896211760, guid: 365a1e10765177b44a5a089b2954b2d4, type: 3}
