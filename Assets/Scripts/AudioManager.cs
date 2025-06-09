@@ -13,22 +13,31 @@ public class AudioManager : MonoBehaviour
     public Button toCanvasBButton; // Sur Canvas A
     public Button toCanvasAButton; // Sur Canvas B
 
-
     [Header("Audio")]
     public AudioSource audioSource;
     public AudioClip audioClip;
 
+    private bool isWaitingForAudioEnd = false;
+
     void Start()
     {
-        // Initial state: show canvasA only
         canvasA.SetActive(true);
         canvasB.SetActive(false);
 
-        // Assign listeners
         if (toCanvasBButton != null)
             toCanvasBButton.onClick.AddListener(SwitchToCanvasB);
         if (toCanvasAButton != null)
             toCanvasAButton.onClick.AddListener(SwitchToCanvasA);
+    }
+
+    void Update()
+    {
+        // Si on attend la fin de l’audio, et que le son est terminé
+        if (isWaitingForAudioEnd && !audioSource.isPlaying)
+        {
+            isWaitingForAudioEnd = false;
+            SwitchToCanvasA(); // Revenir à canvas A automatiquement
+        }
     }
 
     void SwitchToCanvasB()
@@ -40,6 +49,7 @@ public class AudioManager : MonoBehaviour
         {
             audioSource.clip = audioClip;
             audioSource.Play();
+            isWaitingForAudioEnd = true;
         }
     }
 
@@ -52,5 +62,7 @@ public class AudioManager : MonoBehaviour
         {
             audioSource.Pause();
         }
+
+        isWaitingForAudioEnd = false;
     }
 }
