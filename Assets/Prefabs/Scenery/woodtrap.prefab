@@ -51,11 +51,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 4a3b7765b1812d6498a07127ee30a950, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 67deaae528b185e42a61ece40145c57e, type: 2}
+      objectReference: {fileID: 2100000, guid: 49000167e5dd4e34093f7bc485aac6cb, type: 2}
     - target: {fileID: -7511558181221131132, guid: 4a3b7765b1812d6498a07127ee30a950, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 67deaae528b185e42a61ece40145c57e, type: 2}
+      objectReference: {fileID: 2100000, guid: 49000167e5dd4e34093f7bc485aac6cb, type: 2}
     - target: {fileID: 919132149155446097, guid: 4a3b7765b1812d6498a07127ee30a950, type: 3}
       propertyPath: m_Name
       value: woodtrap_combined
@@ -367,8 +367,8 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4868994572008914546}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
+  m_LocalReferencePoint: {x: -0.054612294, y: 0.06431167, z: 0.0021829158}
+  m_Size: 0.27155074
   m_FadeMode: 0
   m_AnimateCrossFading: 0
   m_LastLODIsBillboard: 0
