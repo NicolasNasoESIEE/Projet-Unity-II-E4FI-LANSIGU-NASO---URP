@@ -7245,6 +7245,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3238743171655757448, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_TurnSpeed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3365503358799829600, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_LocalPosition.x
       value: -146
@@ -7289,6 +7293,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6406792926347998267, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6446070995590095416, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_Name
       value: VR FPC
@@ -7304,6 +7312,14 @@ PrefabInstance:
     - target: {fileID: 7076669378944149705, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_LocalPosition.z
       value: 3.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551892139864011100, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8732735953132643536, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_EnableStrafe
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

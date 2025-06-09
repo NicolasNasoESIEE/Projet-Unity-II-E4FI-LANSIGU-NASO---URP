@@ -8,7 +8,13 @@ public class CageAssembler : MonoBehaviour
     public AudioClip spawnSound;
     public ParticleSystem spawnParticlesPrefab;
 
+    public GameObject gameObjectToDisable;
+    public GameObject gameObjectToEnable;
+
     private List<GameObject> sticksInZone = new List<GameObject>();
+    private bool isAssembled = false;
+
+    public bool IsAssembled() => isAssembled;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -27,8 +33,16 @@ public class CageAssembler : MonoBehaviour
 
     private void CheckForCompletion()
     {
-        if (sticksInZone.Count >= 3)
+        if (sticksInZone.Count >= 3 && !isAssembled)
         {
+            isAssembled = true;
+
+            if (gameObjectToDisable != null)
+                gameObjectToDisable.SetActive(false);
+
+            if (gameObjectToEnable != null)
+                gameObjectToEnable.SetActive(true);
+
             Vector3 spawnPosition = cageSpawnPoint != null ? cageSpawnPoint.position : transform.position;
             Quaternion spawnRotation = transform.rotation;
 

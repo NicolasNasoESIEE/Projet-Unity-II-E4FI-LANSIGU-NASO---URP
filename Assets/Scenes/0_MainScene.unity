@@ -2294,6 +2294,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1832924756}
     - target: {fileID: 6950972331788969522, guid: b24af444312cf78408cbef448904c363, type: 3}
+      propertyPath: gameObjectToEnable
+      value: 
+      objectReference: {fileID: 385809077}
+    - target: {fileID: 6950972331788969522, guid: b24af444312cf78408cbef448904c363, type: 3}
+      propertyPath: gameObjectToDisable
+      value: 
+      objectReference: {fileID: 47464988}
+    - target: {fileID: 6950972331788969522, guid: b24af444312cf78408cbef448904c363, type: 3}
       propertyPath: spawnParticlesPrefab
       value: 
       objectReference: {fileID: 3083516673064487388, guid: e736d1404c5bdb541bf00c85e6b5768d, type: 3}
@@ -4661,6 +4669,7 @@ GameObject:
   - component: {fileID: 835802336}
   - component: {fileID: 835802340}
   - component: {fileID: 835802341}
+  - component: {fileID: 835802342}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4755,6 +4764,21 @@ MonoBehaviour:
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
+--- !u!114 &835802342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835802334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c74c5a7db6da442a20b00d7d0634eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cageAssembler: {fileID: 1832924757}
+  gameObject1: {fileID: 47464988}
+  gameObject2: {fileID: 385809077}
 --- !u!4 &850473444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5182022784821119874, guid: 87af029278b2c9343a9dc3c9392a6a69, type: 3}
@@ -9295,6 +9319,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1612673802}
+    - target: {fileID: 11400000, guid: cc3117c6934d64c398696c481729b241, type: 3}
+      propertyPath: TimeSpeedFactor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11449,6 +11477,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 528722615565977272, guid: b24af444312cf78408cbef448904c363, type: 3}
   m_PrefabInstance: {fileID: 450492450}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1832924757 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6950972331788969522, guid: b24af444312cf78408cbef448904c363, type: 3}
+  m_PrefabInstance: {fileID: 450492450}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80b8e3b36da196944bbb15f3fe270bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1842647960 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7462215346416590545, guid: 55f33be43cacecb4f8537cca79bc987c, type: 3}
@@ -13371,6 +13410,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3238743171655757448, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_TurnSpeed
+      value: 120
+      objectReference: {fileID: 0}
     - target: {fileID: 3365503358799829600, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13411,9 +13454,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6406792926347998267, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6446070995590095416, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_Name
       value: VR FPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535078451618970808, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_EnableTurnLeftRight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7551892139864011100, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8732735953132643536, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_EnableStrafe
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
