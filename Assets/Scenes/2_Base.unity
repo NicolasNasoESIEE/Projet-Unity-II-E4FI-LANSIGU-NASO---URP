@@ -406,7 +406,7 @@ MonoBehaviour:
   toCanvasBButton: {fileID: 1426720450}
   toCanvasAButton: {fileID: 1686002688}
   audioSource: {fileID: 1378006955}
-  audioClip: {fileID: 8300000, guid: 2ac170de6feca3248948e5b2d433ea6e, type: 3}
+  audioClip: {fileID: 8300000, guid: 8d4fc5a86381c334fb6f41e39141d247, type: 3}
 --- !u!1 &94675586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4265405002896211760, guid: 365a1e10765177b44a5a089b2954b2d4, type: 3}
@@ -650,8 +650,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172237371}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.27, y: 2.06, z: 7.01}
+  m_LocalRotation: {x: -0, y: 0.7254182, z: -0, w: 0.6883085}
+  m_LocalPosition: {x: 15.24, y: 2.06, z: -0.13482302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -659,7 +659,7 @@ Transform:
   - {fileID: 1397498742}
   - {fileID: 929379849}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 93.007, z: 0}
 --- !u!1 &297086977 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8513424388201257645, guid: 4589ad22f2d29e54caabc0458f6f2291, type: 3}
@@ -1713,7 +1713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 62.15, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.03299904, y: 0.88199997}
+  m_AnchoredPosition: {x: -0.055, y: 0.836}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &687066988
@@ -1736,7 +1736,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Pr\xE9sent"
+  m_text: Simulation
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1763,8 +1763,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3614,8 +3614,8 @@ Transform:
   m_GameObject: {fileID: 1211774252}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0.0030002594, y: 0.8109999, z: -0.051}
-  m_LocalScale: {x: 0.1, y: 1, z: 0.218148}
+  m_LocalPosition: {x: 0.003, y: 0.8109999, z: -0.156}
+  m_LocalScale: {x: 0.1, y: 1, z: 0.22}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 402854714}
@@ -3746,7 +3746,7 @@ GameObject:
   - component: {fileID: 1326406985}
   - component: {fileID: 1326406984}
   m_Layer: 5
-  m_Name: Canvas (3)
+  m_Name: UI_TP_MainScene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3842,7 +3842,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326406983}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -10.14}
+  m_LocalPosition: {x: 0, y: 0, z: -11.43}
   m_LocalScale: {x: 0.5357412, y: 0.5357412, z: 0.5357412}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3852,7 +3852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.34, y: 1.87}
+  m_AnchoredPosition: {x: 0.007, y: 1.87}
   m_SizeDelta: {x: 10.7, y: 7.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1365490426
@@ -6461,7 +6461,7 @@ GameObject:
   - component: {fileID: 1861873051}
   - component: {fileID: 1861873050}
   m_Layer: 5
-  m_Name: Canvas (5)
+  m_Name: Pause Audio Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6567,7 +6567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.73, y: 1.87}
+  m_AnchoredPosition: {x: 11.73, y: 3.06}
   m_SizeDelta: {x: 10.7, y: 7.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1867589176
@@ -6717,7 +6717,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 62.15, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.03299904, y: 0.88199997}
+  m_AnchoredPosition: {x: -0.039, y: 0.844}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1873018511
@@ -6740,7 +6740,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "T\xE9l\xE9porteur"
+  m_text: Planet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6803,7 +6803,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -2.6978226, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -7230,7 +7230,7 @@ GameObject:
   - component: {fileID: 1958656237}
   - component: {fileID: 1958656236}
   m_Layer: 5
-  m_Name: Canvas (4)
+  m_Name: Play Audio Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7336,7 +7336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.73, y: 1.87}
+  m_AnchoredPosition: {x: 11.73, y: 3.06}
   m_SizeDelta: {x: 10.7, y: 7.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1965927923
@@ -7423,10 +7423,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base
       objectReference: {fileID: 0}
+    - target: {fileID: 2029525369266837727, guid: 4589ad22f2d29e54caabc0458f6f2291, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 3566390031902043909, guid: 4589ad22f2d29e54caabc0458f6f2291, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 48237f55589d4fb45ab605ef4c77045c, type: 2}
+    - target: {fileID: 3757017979618407946, guid: 4589ad22f2d29e54caabc0458f6f2291, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3757017979618407946, guid: 4589ad22f2d29e54caabc0458f6f2291, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 3779745573541866595, guid: 4589ad22f2d29e54caabc0458f6f2291, type: 3}
       propertyPath: m_Name
       value: BigCylinder
@@ -7882,7 +7894,7 @@ PrefabInstance:
       objectReference: {fileID: 1907842448}
     - target: {fileID: 2342901807426237832, guid: bd548c938f1bdfc47aa47474d7b4c3a6, type: 3}
       propertyPath: m_Name
-      value: Canvas (2)
+      value: UI_TP_DestroyedScene
       objectReference: {fileID: 0}
     - target: {fileID: 8953532704873555668, guid: bd548c938f1bdfc47aa47474d7b4c3a6, type: 3}
       propertyPath: m_Pivot.x
@@ -7926,7 +7938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8953532704873555668, guid: bd548c938f1bdfc47aa47474d7b4c3a6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.69
+      value: 11.152
       objectReference: {fileID: 0}
     - target: {fileID: 8953532704873555668, guid: bd548c938f1bdfc47aa47474d7b4c3a6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7946,11 +7958,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8953532704873555668, guid: bd548c938f1bdfc47aa47474d7b4c3a6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.34
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 8953532704873555668, guid: bd548c938f1bdfc47aa47474d7b4c3a6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.87
+      value: 1.88
       objectReference: {fileID: 0}
     - target: {fileID: 8953532704873555668, guid: bd548c938f1bdfc47aa47474d7b4c3a6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

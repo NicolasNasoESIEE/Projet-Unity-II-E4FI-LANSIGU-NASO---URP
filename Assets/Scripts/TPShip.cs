@@ -65,10 +65,17 @@ public class TPShip : MonoBehaviour
         forward.y = 0;
         forward.Normalize();
 
-        uiCanvas.transform.position = xrRigCamera.position + forward * canvasDistance;
-        uiCanvas.transform.LookAt(xrRigCamera.position);
+        Vector3 targetPosition = xrRigCamera.position + forward * canvasDistance;
+
+        targetPosition.y = xrRigCamera.position.y - 1.1f;
+
+        uiCanvas.transform.position = targetPosition;
+
+        uiCanvas.transform.LookAt(new Vector3(xrRigCamera.position.x, targetPosition.y, xrRigCamera.position.z));
         uiCanvas.transform.Rotate(0, 180f, 0);
     }
+
+
 
     void DisableMovement()
     {
