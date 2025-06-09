@@ -88,4 +88,14 @@ public class TPShip : MonoBehaviour
         if (moveProvider != null) moveProvider.enabled = true;
         if (turnProvider != null) turnProvider.enabled = true;
     }
+
+    public void TriggerUIExternally()
+    {
+        if (!isUIVisible)
+        {
+            ToggleUI();
+            lastToggleTime = Time.time;
+        }
+    }
+
 }
