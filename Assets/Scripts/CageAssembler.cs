@@ -16,8 +16,6 @@ public class CageAssembler : MonoBehaviour
 
     public bool IsAssembled() => isAssembled;
 
-    public TPShip tpShip;
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -61,8 +59,8 @@ public class CageAssembler : MonoBehaviour
             if (spawnParticlesPrefab != null)
                 Instantiate(spawnParticlesPrefab, spawnPosition, Quaternion.identity);
 
-            if (tpShip != null)
-                tpShip.TriggerUIExternally();
+            if (CageManager.Instance != null)
+                CageManager.Instance.NotifyCageAssembled();
 
             Destroy(gameObject);
         }

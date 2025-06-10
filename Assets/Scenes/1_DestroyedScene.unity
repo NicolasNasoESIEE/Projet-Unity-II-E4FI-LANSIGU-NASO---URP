@@ -6705,6 +6705,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8732735953132643536, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8732735953132643536, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_EnableStrafe
       value: 0
       objectReference: {fileID: 0}
@@ -6789,6 +6793,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 22cf0391dd8603c41a521be05f90d3b8, type: 3}
       propertyPath: m_Name
       value: tuyeau
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 22cf0391dd8603c41a521be05f90d3b8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -2293,6 +2293,18 @@ PrefabInstance:
       propertyPath: m_LODs.Array.data[2].screenRelativeHeight
       value: 0.020130519
       objectReference: {fileID: 0}
+    - target: {fileID: 4951048397951947484, guid: b24af444312cf78408cbef448904c363, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951048397951947484, guid: b24af444312cf78408cbef448904c363, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951048397951947484, guid: b24af444312cf78408cbef448904c363, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 6950972331788969522, guid: b24af444312cf78408cbef448904c363, type: 3}
       propertyPath: tpShip
       value: 
@@ -4840,6 +4852,7 @@ GameObject:
   - component: {fileID: 835802341}
   - component: {fileID: 835802343}
   - component: {fileID: 835802342}
+  - component: {fileID: 835802344}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -4892,7 +4905,7 @@ MonoBehaviour:
   objectToSpawn: {fileID: 6451641283337355668, guid: 45fb77528a8cd524186d4474196579bf, type: 3}
   terrain: {fileID: 1887325917}
   spawnOffset: 2
-  numberToSpawn: 250
+  numberToSpawn: 300
   interactionManager: {fileID: 774069716}
 --- !u!114 &835802341
 MonoBehaviour:
@@ -4965,6 +4978,20 @@ MonoBehaviour:
   uiCanvas: {fileID: 546452744}
   moveProvider: {fileID: 1211082904}
   turnProvider: {fileID: 1741761717}
+--- !u!114 &835802344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835802334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dba0d0660b1ad848be370552d7dd23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalCages: 3
+  tpShip: {fileID: 835802343}
 --- !u!4 &850473444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5182022784821119874, guid: 87af029278b2c9343a9dc3c9392a6a69, type: 3}
@@ -6496,7 +6523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1006463246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7196,7 +7223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1131688755
 Transform:
   m_ObjectHideFlags: 0
@@ -10155,7 +10182,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 528722615565977272, guid: b24af444312cf78408cbef448904c363, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.65
+      value: 17.83
       objectReference: {fileID: 0}
     - target: {fileID: 528722615565977272, guid: b24af444312cf78408cbef448904c363, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13881,15 +13908,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7076669378944149705, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 745.5
+      value: 659.59
       objectReference: {fileID: 0}
     - target: {fileID: 7076669378944149705, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 21.5
+      value: 19.51
       objectReference: {fileID: 0}
     - target: {fileID: 7076669378944149705, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 260.6
+      value: 249.36
       objectReference: {fileID: 0}
     - target: {fileID: 7076669378944149705, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13916,6 +13943,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8732735953132643536, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
+      propertyPath: m_MoveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8732735953132643536, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
       propertyPath: m_EnableStrafe
       value: 0
       objectReference: {fileID: 0}
@@ -13923,7 +13954,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3365503358799829600, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
-      insertIndex: 0
+      insertIndex: -1
       addedObject: {fileID: 1692534997}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62efb88d90f8dd840ab390156b066b76, type: 3}
