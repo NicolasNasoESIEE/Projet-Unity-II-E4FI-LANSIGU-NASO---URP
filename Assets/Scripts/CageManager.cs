@@ -18,7 +18,10 @@ public class CageManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            allCagesAssembled = PlayerPrefs.GetInt("CagesAssembled", 0) == 1;
+            // allCagesAssembled = PlayerPrefs.GetInt("CagesAssembled", 0) == 1;
+
+            allCagesAssembled = false;
+            assembledCages = 0;
         }
         else
         {
@@ -26,11 +29,12 @@ public class CageManager : MonoBehaviour
         }
     }
 
+
     public void NotifyCageAssembled()
     {
         assembledCages++;
 
-        if (assembledCages >= totalCages && !allCagesAssembled)
+        if (assembledCages >= totalCages)
         {
             allCagesAssembled = true;
             PlayerPrefs.SetInt("CagesAssembled", 1);
